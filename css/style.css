@@ -2,9 +2,107 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+:root{
+    --primary-color: #009f4d;
+    --secondary-color: #213364;
+    --font-color: #666;
+    --bg-color: #fff;
+    --heading-color: #3f3a64;
+}
+html{
+    
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
 }
 
+.active{
+    display: block;
+}
 /* Header  */
+header{
+    
+}
+
+.main-header{
+    display: grid;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+.navbar-brand{
+    font-size: 30px;
+    padding: 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo-icon{
+    vertical-align: bottom;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.slogan{
+    font-size: 14px;
+
+    padding-left: 46px;
+
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+.nav-item .nav-link{
+    font-size: 15px;
+    padding: 14px 0 10px !important;
+    font-weight: 600;
+}
+
+.dropdown-toggle::after{
+    position: absolute;
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    border: none;
+    top: 18px;
+    font-size: 12px;
+
+
+}
+
+.nav-item.dropdown{
+    padding-right: 25px;
+}
+
+.header-search .search-btn i{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.mode-btn i.gg-sun {
+    display: none; 
+}
+  
+.mode-btn i.gg-moon {
+    display: block; 
+}
+
+.mode-btn{
+    width: 24px;
+    height: 24px;
+}
+
+
 /* Banner  */
 /* About  */
 /* Features  */
@@ -15,3 +113,10 @@
 /* News  */
 /* Contact  */
 /* Footer  */
+
+/* Media query */
+@media (min-width: 1280px){
+    .container{
+        max-width: 1200px
+    }
+}
