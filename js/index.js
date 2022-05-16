@@ -1,6 +1,23 @@
 // const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
 var isSunMode = 1;
+// Active Navbar max-width(991px)
+var burgerMenu = document.querySelector('.navbar-toggler');
+
+burgerMenu.onclick = function(){
+    document.querySelector('.main-header').classList.toggle('active')
+    document.querySelector('body').classList.toggle('freeze')
+}
+
+// Scroll Fix Navbar
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 10){
+        document.querySelector('header.main-header').classList.add('nav-fixed')
+    }else{
+        document.querySelector('header.main-header').classList.remove('nav-fixed')
+    }
+})
+
 // Toggle Dark Mode
 
 const modeBtn = document.querySelector('.theme-mode .mode-btn');
@@ -16,7 +33,7 @@ function switchModeIcon(){
     }
 }
 
-
 modeBtn.addEventListener('click', function(){
     switchModeIcon();
+    document.querySelector('body').classList.toggle('dark-mode');
 })
