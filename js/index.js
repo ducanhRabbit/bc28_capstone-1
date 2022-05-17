@@ -37,3 +37,22 @@ modeBtn.addEventListener('click', function(){
     switchModeIcon();
     document.querySelector('body').classList.toggle('dark-mode');
 })
+
+// Search Active
+
+const searchBtn = document.querySelector('.icon-material-search')
+
+searchBtn.addEventListener('click', function(){
+    document.querySelector('body').classList.add('search-active');
+    document.querySelector('.search-input').focus();
+})
+
+// Close Search
+function closeSearch(){
+    let searchCloseBtn = document.querySelector('.header-search .icon-close');
+    searchCloseBtn.addEventListener('click', function(){
+        document.querySelector('body').classList.remove('search-active');
+    })
+    
+}
+closeSearch();
