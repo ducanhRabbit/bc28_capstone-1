@@ -349,6 +349,7 @@ header {}
 /* Features  */
 /* Services  */
 /* Gallery  */
+
 /* Progress  */
 .title-small {
     font-size: 14px;
@@ -464,17 +465,50 @@ header {}
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Feedback  */
+.testimonial blockquote {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.blockquote q {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--font-color);
+    opacity: .8;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    background-color: #00732c;
+    
+}
+
+.fb__img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.fb__content{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    text-align: left;
+    grid-gap: 20px;
+}
+
+.feedback__item{
+    position: relative;
+}
+
 /* News  */
 /* Contact  */
 /* Footer  */
