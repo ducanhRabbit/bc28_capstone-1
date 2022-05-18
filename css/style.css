@@ -15,6 +15,7 @@
     --bg-lightgrey: #f8f9fa;
     --layer: rgba(29, 42, 55, 0.7);
     --border-color: transparent;
+
 }
 
 /* Common */
@@ -29,7 +30,6 @@ li {
 
 a {
     text-decoration: none;
-
 }
 
 html {}
@@ -254,7 +254,8 @@ header.nav-fixed {
 
     .navbar-collapse {
         max-height: calc(100vh - 80px);
-        overflow-y: scroll;
+        overflow-y: scroll; 
+
     }
 
     .header-search .search-btn i {
@@ -302,6 +303,7 @@ header.nav-fixed {
 }
 
 /* Search Active */
+
 body.search-active {
     overflow: hidden;
 }
@@ -311,7 +313,6 @@ body.search-active .search-btn {
     right: 0;
     position: absolute;
 }
-
 
 body.search-active .search-btn .icon-material-search {
     opacity: 0;
