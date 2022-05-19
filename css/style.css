@@ -465,8 +465,6 @@ header {}
 }
 
 
-
-
 /* Feedback  */
 .feedback__bg{
     background-color: #f8f9fa;
@@ -628,6 +626,11 @@ header {}
     text-transform: capitalize;
 }
 
+.card__icon a:hover{
+    color: #009f4d;
+    transition: all 0.2s linear;
+}
+
 .card__date{
     line-height: 27px;
     color: var(--font-color);
@@ -698,8 +701,6 @@ header {}
     font-size: 16px;
 }
 
-
-
 /* Footer  */
 
 /* Media query */
@@ -709,6 +710,33 @@ header {}
     }
 }
 
+@media (max-width: 1080px) {
+    .title-big {
+    font-size: 32px !important;
+    line-height: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .title-big {
+    font-size: 30px !important;
+    line-height: 36px;
+    }
+}
+
+@media (max-width: 415px) {
+    .title-big {
+    font-size: 26px !important;
+    line-height: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title-big {
+    font-size: 24px !important;
+    line-height: 30px;
+    }
+}
 
 
 
