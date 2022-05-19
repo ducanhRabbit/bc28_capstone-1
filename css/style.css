@@ -814,6 +814,7 @@ body.search-active .search-input::placeholder {
     line-height: 27px;
     color: var(--font-color);
     opacity: 0.8;
+    letter-spacing: 0.1;
 }
 
 .service__item-btn{
@@ -836,6 +837,119 @@ body.search-active .search-input::placeholder {
     width: 100%;
 }
 /* Gallery  */
+#gallery{
+    background-color: var(--bg-grey);
+}
+
+.gallery__item{
+    padding: 0 15px;
+}
+
+.gallery__item a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.gallery__item a:hover .gallery__img{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.gallery__item a:hover .gallery__overlay{
+    opacity: 1;
+}
+
+.gallery__item a:hover .gallery__hover-content{
+    bottom: 0;
+    opacity: 1;
+}
+
+.gallery__img{
+    width: 100%;
+    display: block;
+    transition: 0.5s all;
+}
+
+.gallery__overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--layer);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.gallery__hover-content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    padding: 46px 50px;
+    color: #ffffff;
+}
+
+.gallery__hover-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery__hover-text{
+    font-size: 18px;
+    color: #eee;
+    display: block;
+}
+
+.gallery__brand img{
+    max-width: 100%;
+    padding: 0 18px;
+}
+
+/* Lightbox Gallery */
+.lb-nav a.lb-prev{
+    background: url(../img/prev.png) 40px 48% no-repeat;
+}
+.lb-nav a.lb-next{
+    background: url(../img/next.png) -23px 48% no-repeat;
+}
+
+.lb-data .lb-close{
+    background: url(../img/close.png) top right no-repeat;
+    margin-top: 1em;
+}
+
+.lb-data .lb-details{
+    width: 90%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    margin-top: 1em;
+}
+
+.lb-data .lb-caption {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-top: 1em;
+    font-size: 1em;
+    color: var(--primary-color);
+}
 /* Progress  */
 .title-small {
     font-size: 14px;
