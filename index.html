@@ -17,7 +17,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-
+    <!-- Lightbox V2.11.3 -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -27,7 +28,7 @@
     <!-- Header -->
     <header class="main-header fixed-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg text-white navbar-dark bg-black py-0">
+            <nav class="navbar navbar-expand-lg text-white navbar-dark py-0">
                 <h1 class="logo">
                     <a class="navbar-brand" href="https://wp.w3layouts.com/corpvision/">
                         <span class="fa fa-align-right logo-icon"></span>
@@ -39,40 +40,44 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon icon-expand fa fa-bars"></span>
+                    <span class="navbar-toggler-icon icon-close fa fa-times"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="#url">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="#url">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="#url">SERVICES</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#url" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 PAGES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#url">Blog Posts</a></li>
+                                <li><a class="dropdown-item" href="#url">404 Page</a></li>
+                                <li><a class="dropdown-item" href="#url">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="#url">Elements Page</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#url">CONTACT</a>
                         </li>
                     </ul>
                     <div class="header-search">
                         <div class="search-btn me-3">
                             <i class='fa fa-search icon-material-search'></i>
+                        </div>
+                        <!-- Search Active -->
+                        <i class="fa fa-close icon-close mt-lg-3"></i>
+                        <div class="search-wrap">
+                            <input type="text" placeholder="Start Typing" class="search-input">
                         </div>
                     </div>
                     <div class="theme-mode">
@@ -110,7 +115,7 @@
                     <div class="banner__slide banner__slide-bg2">
                         <div class="container">
                             <div class="slide__content">
-                                <h1 class="slide__title">We will solve your issues our vision to your future</h1>
+                                <h1 class="slide__title">Embracing success do our best, need best advice</h1>
                                 <p class="slide__text">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                                 </p>
@@ -124,7 +129,7 @@
                     <div class="banner__slide banner__slide-bg3">
                         <div class="container">
                             <div class="slide__content">
-                                <h1 class="slide__title">We will solve your issues our vision to your future</h1>
+                                <h1 class="slide__title">Digital transformation driven by technology</h1>
                                 <p class="slide__text">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                                 </p>
@@ -138,7 +143,7 @@
                     <div class="banner__slide banner__slide-bg4">
                         <div class="container">
                             <div class="slide__content">
-                                <h1 class="slide__title">We will solve your issues our vision to your future</h1>
+                                <h1 class="slide__title">For those who belive in leaving a mark</h1>
                                 <p class="slide__text">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                                 </p>
@@ -161,22 +166,268 @@
     </section>
 
     <!-- About -->
-    <section class="about">
-
+    <section id="about">
+        <div class="about__wrap py-5">
+            <div class="container py-lg-5 py-md-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p class="about__kicker kicker">ABOUT US</p>
+                        <h3 class="about__title title">
+                            We make the best strategies for you, Enhancing your success
+                        </h3>
+                        <p class="about__text text mt-md-4 mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut
+                            ex ea.
+                        </p>
+                        <ul class="about__list pt-lg-2 mt-4">
+                            <li class="about__item">
+                                <a href="#url">
+                                    <i class="fa fa-check-circle"></i>
+                                    UI/UX Design and Development
+                                </a>
+                            </li>
+                            <li class="about__item">
+                                <a href="#url">
+                                    <i class="fa fa-check-circle"></i>
+                                    Branding Design and Identity
+                                </a>
+                            </li>
+                            <li class="about__item">
+                                <a href="#url">
+                                    <i class="fa fa-check-circle"></i>
+                                    Mobile App Design and Development
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./img/a.jpg" class="about__img" alt="">
+                            </div>
+                            <div class="col-6 mt-4">
+                                <img src="./img/c1.jpg" class="about__img mb-2 mb-md-3" alt="">
+                                <img src="./img/c4.jpg" class="about__img mt-md-3" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Features -->
-    <section class="features">
-
+    <section id="features">
+        <div class="features__wrap py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pe-lg-5">
+                        <p class="kicker">EVERY DAY BRINGS NEW CHALLENGE</p>
+                        <h3 class="title">
+                            Creative agency focused on vision, product and people
+                        </h3>
+                        <p class="text mt-md-4 mt-3">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi
+                            ac sed,
+                            lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
+                            amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.
+                        </p>
+                        <a href="#about" class="btn btn-primary features__btn mt-lg-5 mt-4">Discover More</a>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 ">
+                        <div class="features__list">
+                            <div class="feature__item">
+                                <div class="feature__icon">
+                                    <img src="./img/icon1.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="" class="feature__title">Our Process</a>
+                                </h4>
+                            </div>
+                            <div class="feature__item">
+                                <div class="feature__icon">
+                                    <img src="./img/icon2.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="" class="feature__title">How We Help</a>
+                                </h4>
+                            </div>
+                            <div class="feature__item">
+                                <div class="feature__icon">
+                                    <img src="./img/icon3.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="" class="feature__title">UI/UX Design</a>
+                                </h4>
+                            </div>
+                            <div class="feature__item">
+                                <div class="feature__icon">
+                                    <img src="./img/icon4.png" alt="">
+                                </div>
+                                <h4>
+                                    <a href="" class="feature__title">Creative Ideas</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Services -->
-    <section class="services">
-
+    <section id="services">
+        <div class="section__wrap py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <h3 class="title services__title">
+                    Always there for your care, our services
+                </h3>
+                <div class="row mt-lg-5 mt-4 text-center justify-content-center">
+                    <div class="col-lg-4 col-md-6 service__item">
+                        <a href="#url" class="service__item-head">
+                            <img src="./img/s1.jpg" alt="">
+                        </a>
+                        <div class="service__item-body">
+                            <a href="#url" class="item-body__title">
+                                Work Expertise
+                            </a>
+                            <p class="item-body__text">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..
+                            </p>
+                        </div>
+                        <a href="#url" class="service__item-btn mt-3">
+                            Learn More
+                        </a>
+                        .
+                    </div>
+                    <div class="col-lg-4 col-md-6 service__item">
+                        <a href="#url" class="service__item-head">
+                            <img src="./img/s2.jpg" alt="">
+                        </a>
+                        <div class="service__item-body">
+                            <a href="#url" class="item-body__title">
+                                Product Development
+                            </a>
+                            <p class="item-body__text">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..
+                            </p>
+                        </div>
+                        <a href="#url" class="service__item-btn mt-3">
+                            Learn More
+                        </a>
+                        .
+                    </div>
+                    <div class="col-lg-4 col-md-6 service__item">
+                        <a href="#url" class="service__item-head">
+                            <img src="./img/s3.jpg" alt="">
+                        </a>
+                        <div class="service__item-body">
+                            <a href="#url" class="item-body__title">
+                                Software Development
+                            </a>
+                            <p class="item-body__text">
+                                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..
+                            </p>
+                        </div>
+                        <a href="#url" class="service__item-btn mt-3">
+                            Learn More
+                        </a>
+                        .
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Gallery -->
-    <section class="gallery">
+    <section id="gallery">
+        <div class="gallery__wrap py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="text-center mb-5">
+                    <h3 class="kicker">OUR GALLERY</h3>
+                    <h3 class="title mx-lg-5">Successful projects we've done</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 gallery__item">
+                        <a href="./img/c1.jpg" data-lightbox="example-set" data-title="Project 1" class="">
+                            <img class="gallery__img" src="./img/c1.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 1</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 gallery__item">
+                        <a href="./img/c2.jpg" data-lightbox="example-set" data-title="Project 2" class="">
+                            <img class="gallery__img" src="./img/c2.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 2</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 gallery__item">
+                        <a href="./img/c3.jpg" data-lightbox="example-set" data-title="Project 3" class="">
+                            <img class="gallery__img" src="./img/c3.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 3</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4 pt-lg-2 gallery__item">
+                        <a href="./img/c4.jpg" data-lightbox="example-set" data-title="Project 4" class="">
+                            <img class="gallery__img" src="./img/c4.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 4</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4 pt-lg-2 gallery__item">
+                        <a href="./img/c5.jpg" data-lightbox="example-set" data-title="Project 5" class="">
+                            <img class="gallery__img" src="./img/c5.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 5</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4 pt-lg-2 gallery__item">
+                        <a href="./img/c6.jpg" data-lightbox="example-set" data-title="Project 6" class="">
+                            <img class="gallery__img" src="./img/c6.jpg" alt="">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallery__hover-content">
+                                <span class="gallery__hover-title">Project 6</span>
+                                <span class="gallery__hover-text">Quisque ut lectus, eros et, sed commodo risus.</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row gallery__brands-list pt-5 mt-5 justify-content-center">
+                    <div class="col-lg-2 col-md-3 col-4 gallery__brand">
+                        <img src="./img/brand1.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 gallery__brand">
+                        <img src="./img/brand3.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 gallery__brand">
+                        <img src="./img/brand4.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 gallery__brand mt-md-0 mt-4">
+                        <img src="./img/brand5.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 gallery__brand mt-lg-0 mt-4">
+                        <img src="./img/brand6.png" alt="">
+                    </div>
+                </div>
+            </div>
 
     </section>
 
@@ -189,6 +440,7 @@
                         <img src="./img/about.jpg" alt="" class="radius-image img-fluid" style="border-radius: 8px">
                     </div>
                     <div class="progress__bg col-lg-6 mt-lg-0 mt-md-5 mt-4">
+
                         <span class="title-small">Your success is our success</span>
                         <h3 class="title-big mb-4 pb-lg-2">Web design, marketing & SEO solutions that get results</h3>
                         <div class="progress-info">
@@ -521,11 +773,13 @@
         </section>
     </footer>
 
-    <!-- Git Js -->
+
+    </div>
+    <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!-- Jquery v.3.3.1 -->
+    <!-- Jquery v.3.6.0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -548,7 +802,7 @@
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            autoplay: false,
+                            autoplay: true,
                             autoplaySpeed: 4000,
                             swipe: true,
                         }
@@ -571,6 +825,15 @@
             });
         });
     </script>
+    <!-- Lightbox JS -->
+    <script src="./js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+          'disableScroling': true,
+          'wrapAround': true
+        })
+    </script>
+    <!-- My JS -->
     <script src="./js/index.js"></script>
 
     <!-- Back-to-top -->
