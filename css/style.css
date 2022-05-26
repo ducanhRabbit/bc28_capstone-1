@@ -15,6 +15,7 @@
     --bg-lightgrey: #f8f9fa;
     --layer: rgba(29, 42, 55, 0.7);
     --border-color: transparent;
+    --border-color2: rgba(0, 0, 0, 0.15);
 }
 
 
@@ -80,6 +81,7 @@ html {
     --bg-color: #151421;
     --heading-color: #eee;
     --border-color: rgba(255, 255, 255, 0.2);
+    --border-color2: rgba(255, 255, 255, 0.2);
     --bg-grey: #100f19;
 }
 
@@ -186,6 +188,7 @@ header.nav-fixed {
     position: relative;
     z-index: 1000;
     background: var(--bg-color);
+    border: 1px solid var(--border-color2);
 }
 
 .dropdown-menu::after {
@@ -197,7 +200,7 @@ header.nav-fixed {
     top: -6px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color2);
     border-right: none;
     border-bottom: none;
     z-index: 1001;
@@ -222,11 +225,13 @@ header.nav-fixed {
     color: #fff;
     transform-origin: 50%;
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .header-search .search-btn .icon-material-search {
     line-height: 45px;
-    transition: opacity 0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
+
 }
 
 .mode-btn i.gg-sun {
@@ -240,6 +245,7 @@ header.nav-fixed {
 .mode-btn {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 /* Navbars Collapsed */
@@ -324,10 +330,10 @@ header.nav-fixed {
         position: relative;
     }
 }
-
+/* 
 .navbar-collapse.show .nav-link {
     text-align: center;
-}
+} */
 
 .navbar-toggler-icon.fa {
     font-size: 20px;
@@ -745,6 +751,7 @@ body.search-active .search-input::placeholder {
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
     background-color: var(--bg-color);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .feature__item:hover {
@@ -929,7 +936,7 @@ body.search-active .search-input::placeholder {
 }
 
 .lb-nav a.lb-next {
-    background: url(../img/next.png) -23px 48% no-repeat;
+    background: url(../img/next.png) 90% 48% no-repeat;
 }
 
 .lb-data .lb-close {
@@ -1530,6 +1537,5 @@ footer {
     .title-big {
         font-size: 24px !important;
         line-height: 30px;
-    }
-
-
+    } 
+}
